@@ -1,0 +1,10 @@
+and Selenium on LambdaTest, an online Selenium Grid of 3000+ real browsers. The .gitlab-ci.yml file should look like this:
+image: python:3
+stages:
+  - test
+
+test:
+  stage: test
+  script:
+    - pip install -r requirements.txt
+    - LT_USERNAME=saqibali493 LT_ACCESS_KEY=Devops123@ python test.py
